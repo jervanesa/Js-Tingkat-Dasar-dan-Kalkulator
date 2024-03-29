@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id">  <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+<head>
+<meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+<title>Belajar JavaScript: Function</title> <!-- Sebagai judul utama halaman web -->
+</head>
+<body>
+<h1>Belajar JavaScript: Function</h1> <!-- Judul h1 untuk bagian utama halaman -->
+<script>
+// Calling Function
+function pagi() {  // Mendefinisikan fungsi pagi tanpa parameter
+
+console.log("Selamat Pagi"); // Cetak pesan "Selamat Pagi" ke konsol
+console.log("Good Morning"); // Cetak pesan "Good Morning" ke konsol
+console.log("Ohayou Gozaimasu"); // Cetak pesan "Ohayou Gozaimasu" ke konsol
+console.log("Buenos Dias"); // Cetak pesan "Buenos Dias" ke konsol
+}
+
+pagi(); // Memanggil fungsi pagi
+pagi(); // Memanggil fungsi pagi
+pagi(); // Memanggil fungsi pagi
+
+// Return Value
+function pagi() { // Mendefinisikan fungsi pagi tanpa parameter
+return "Semangat Pagi"; // Mengembalikan nilai "Semangat Pagi"
+}
+
+let salam = pagi(); // Memanggil fungsi pagi dan menyimpan nilai kembaliannya dalam variabel salam
+console.log(salam); // mencetak nilai variabel salam ke konsol "Semangat Pagi"
+
+// Parameter & Argument;
+function pagi(siapa) {  // Mendefinisikan fungsi pagi dengan parameter siapa
+return "Semangat Pagi " + siapa; // Mengembalikan nilai "Semangat Pagi" ditambah nilai parameter siapa
+}
+
+console.log(pagi("Budi")); // Cetak hasil panggilan fungsi pagi dengan argumen Semangat Pagi Budi
+console.log(pagi("Joko")); // Cetak hasil panggilan fungsi pagi dengan argumen Semangat Pagi Joko
+console.log(pagi("Sari")); // Cetak hasil panggilan fungsi pagi dengan argumen Semangat Pagi Sari
+
+// Default Parameter
+function rata2(a = 10, b = 10, c = 10, d = 10) { // Mendefinisikan fungsi rata2 dengan parameter default
+let hasil = (a + b + c + d) / 4; // Menghitung rata-rata dari empat nilai yang diberikan
+return hasil; // Mengembalikan nilai rata-rata
+}
+
+let nilai1 = rata2(); // Memanggil fungsi rata2 tanpa argumen
+console.log(nilai1); // Cetak hasil panggilan fungsi rata2 ke konsol  10
+let nilai2 = rata2(20); // Memanggil fungsi rata2 dengan argumen pertama 20
+console.log(nilai2); // Cetak hasil panggilan fungsi rata2 ke konsol  12.5
+let nilai3 = rata2(20, 5, 30); // Memanggil fungsi rata2 dengan beberapa argumen
+console.log(nilai3); // Cetak hasil panggilan fungsi rata2 ke konsol  16.25
+
+// Normal Function
+function kuadrat(a) { // Mendefinisikan fungsi kuadrat dengan parameter a
+return a * a;  // Mengembalikan nilai a kuadrat
+}
+
+console.log(kuadrat(5)); // Cetak hasil panggilan fungsi kuadrat dengan argumen 5 ke konsol 25
+
+// Const Function
+const kuadrat2 = function (a) { // Mendefinisikan fungsi kuadrat2 dengan parameter a menggunakan const
+return a * a; // Mengembalikan nilai a kuadrat
+};
+
+console.log(kuadrat2(5)); //  Cetak hasil panggilan fungsi kuadrat2 dengan argumen 5 ke konsol 25
+
+// Arrow Function
+const kuadrat3 = (a) => { // Mendefinisikan fungsi kuadrat3 dengan parameter a menggunakan arrow function
+return a * a; // Mengembalikan nilai a kuadrat
+};
+
+console.log(kuadrat3(5)); // Cetak hasil panggilan fungsi kuadrat3 dengan argumen 5 ke konsol 25
+// Arrow Function
+const kuadrat4 = (a) => a * a; // Definisi fungsi kuadrat4 dengan parameter a menggunakan arrow function
+console.log(kuadrat4(5)); //  Cetak hasil panggilan fungsi kuadrat4 dengan argumen 5 ke konsol 25
+
+// Arrow Function
+const kuadrat5 = (a) => a * a; // Definisi fungsi kuadrat5 dengan parameter a menggunakan arrow function
+console.log(kuadrat5(5)); // //  Cetak hasil panggilan fungsi kuadrat4 dengan argumen 5 ke konsol 25
+
+// Arrow Function
+const greeting = () => "Semangat Pagi";  // Mendefinisikan fungsi greeting tanpa parameter menggunakan arrow function
+console.log(greeting()); // Cetak hasil panggilan fungsi greeting ke konsol Semangat Pagi
+
+// Arrow Function
+const greeting2 = (kapan, siapa) => `Selamat ${kapan}, ${siapa}`; // Mendefinisikan fungsi greeting2 dengan dua parameter menggunakan arrow function
+console.log(greeting2("Pagi", "Budi")); // Cetak hasil panggilan fungsi greeting2 dengan argumen Selamat Pagi, Budi
+
+// Arrow Function
+const greeting3 = (kapan = "Pagi", siapa = "Kawan") => `Selamat ${kapan}, ${siapa}`; // Mendefinisikan fungsi greeting3 dengan dua parameter default menggunakan arrow function
+
+console.log(greeting3()); // Selamat Pagi, Kawan
+console.log(greeting3("Sore")); // Selamat Sore, Kawan
+console.log(greeting3("Malam", "Budi")); // Selamat Malam, Budi
+
+</script>
+</body>
+</html>

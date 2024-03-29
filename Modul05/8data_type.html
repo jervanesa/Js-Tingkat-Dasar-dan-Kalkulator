@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id"> <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+  <head>
+    <meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+    <title>Belajar JavaScript: Tipe Data</title> <!-- Sebagai judul utama halaman web -->
+  </head>
+  <body>
+    <h1>Belajar JavaScript: Data Type</h1> <!-- Judul h1 untuk bagian utama halaman -->
+    <script>
+      // Number
+      let foo = 100; // foo type data yang menyimpan bil.bulat positif
+      let bar = -5000; // bar type data yang menyimpan bil.bulat negatif
+      let baz = 0.66634; // baz type data desimal
+
+      //console.log untuk mencetak nilai/pesan ke konsol JS pada browser
+      console.log(foo); // 100
+      console.log(bar); // -5000
+      console.log(baz); // 0.66634
+
+      // String
+      let text;
+      text = "Hello World"; // text menyimpan string "Hello World"
+      console.log(text); // Cetak nilai text ke konsol
+
+      text = "Sedang belajar JavaScript"; // text sekarang menyimpan string "Sedang belajar JavaScript"
+      console.log(text); // Cetak nilai text ke konsol
+
+      text = "199"; // text sekarang menyimpan string "199"
+      console.log(text); // Cetak nilai text ke konsol
+
+      // Type Of
+      let num = 199; // num is a variabel angka
+      console.log(typeof num); // number
+
+      let word = "199"; // num is a variabel kata
+      console.log(typeof word); // string
+
+      // Template String
+      let name = "Purnama";
+      let hello = `Semangat Pagi ${name}`; // hello menyimpan template string dengan variabel name
+
+      console.log(hello); // Semangat Pagi Purnama // Cetak nilai hello ke konsol
+      let myHello = "Semangat Pagi " + name; // myHello menyimpan string gabungan dengan variabel name
+      console.log(myHello); // Semangat Pagi Purnama // Cetak nilai myHello ke konsol
+
+      // Boolean anatara benar dan salah
+      let benar = true; // benar menyimpan nilai boolean true
+      let salah = false; // salah menyimpan nilai boolean false
+
+      console.log(benar); // true
+      console.log(salah); // false
+
+      // Null
+      let myNull = null; // myNull menyimpan nilai null
+
+      console.log(myNull); // null
+
+      // Array
+      let siswa = ["Andri", "Joko", "Sukma", "Rina", "Sari"]; // siswa adalah array yang menyimpan nama-nama siswa
+
+      console.log(siswa[0]); // Andri
+      console.log(siswa[1]); // Joko
+      console.log(siswa[2]); // Sukma
+      console.log(siswa[3]); // Rina
+      console.log(siswa[4]); // Sari
+
+      // Change Array Value 
+      let arr = ["andi", "santi", "joko"]; // arr adalah array yang menyimpan nama-nama
+
+      arr[0] = "alex"; // Mengubah nilai elemen pertama array menjadi "alex"
+      console.log(arr); // Array [ "alex", "santi", "joko" ]
+      arr[3] = "rika"; // Menambahkan nilai "rika" pada indeks ke-3 array
+      console.log(arr); // Array [ "alex", "santi", "joko", "rika" ]
+
+      // Array Destructuring
+      let mahasiswa = ["Andi", "Lisa", "Eko"]; // mahasiswa adalah array yang menyimpan nama-nama mahasiswa
+      let [a, b, c] = mahasiswa; // Membongkar array mahasiswa menjadi variabel a, b, dan c
+
+      console.log(a); // Andi
+      console.log(b); // Lisa
+      console.log(c); // Eko
+
+    </script>
+  </body>
+</html>

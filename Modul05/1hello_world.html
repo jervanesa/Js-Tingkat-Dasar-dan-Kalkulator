@@ -1,0 +1,13 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id"> <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+  <head>
+    <meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+    <title>Belajar JavaScript</title> <!--sebagai judul utama halaman web-->
+  </head>
+  <body>
+    <h1 id="myH1"></h1> <!--- Ini adalah elemen h1 dengan atribut id "myH1" yang akan diubah isinya menggunakan JavaScript. --->
+    <script>
+      document.getElementById("myH1").innerHTML = "Hello World"; // fungsi doc elemet dengan myH1, mengubah teks dalam elemen h1 dengan id "myH1" menjadi "Hello World".
+    </script>
+  </body>
+</html>

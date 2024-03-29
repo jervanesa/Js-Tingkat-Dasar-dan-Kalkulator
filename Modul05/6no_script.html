@@ -1,0 +1,24 @@
+<!DOCTYPE html> <!---Deklarasi tipe dokumen HTML-->
+<html lang="id">  <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+<head>
+<meta charset="utf-8"> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+<!--sebagai judul halaman utama halaman web-->
+<title> Belajar JavaScript: No Script</title>
+</head>
+<body>
+<!-- Elemen h1 yang akan diubah isinya oleh JavaScript -->
+<h1 id="myH1"></h1>
+
+<!-- Skrip JavaScript internal yang mengubah isi dari elemen h1 -->
+<script>
+document.getElementById('myH1').innerHTML='JavaScript Aktif';
+</script>
+
+<!-- Elemen noscript yang akan ditampilkan jika JavaScript tidak aktif -->
+<noscript>
+
+<!-- Pesan yang muncul jika JavaScript tidak aktif -->
+<h2>JavaScript tidak aktif, mohon diaktifkan untuk bisa mengakses halaman ini<h2>
+</noscript>
+</body>
+</html>

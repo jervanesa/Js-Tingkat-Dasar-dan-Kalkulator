@@ -1,0 +1,42 @@
+.calculator {
+    width: 300px; /* Lebar kalkulator */
+    margin: 50px auto; /* Margin atas dan bawah 50px, otomatis di tengah */
+    border: 1px solid #0b0b0b; /* Garis tepi dengan warna tertentu */
+    background-color: #6e4949; /* Warna latar belakang, ganti dengan warna yang diinginkan */
+    border-radius: 5px; /* Sudut lengkung pada sudut kalkulator */
+    padding: 10px;  /* Padding di dalam kalkulator */
+    box-shadow: 0px 0px 10px rgba(225, 18, 18, 0.1); /* Efek bayangan */
+}
+
+#display {
+    width: 100%; /* Lebar input */
+    height: 50px; /* Tinggi input */
+    font-size: 24px; /* Ukuran font */
+    text-align: right; /* Teks rata kanan */
+    margin-bottom: 10px; /* Margin bawah */
+} 
+
+.calculator h2 {
+    text-align: center; /* Teks rata tengah */
+    color: white; /* Ubah warna teks menjadi putih */
+}
+
+.buttons {
+    display: grid; /* Tampilan grid */
+    grid-template-columns: repeat(4, 1fr); /* Empat kolom dengan ukuran yang sama */
+    grid-gap: 5px; /* Jarak antar sel di grid */
+}
+
+button {
+    width: 100%; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    font-size: 18px; /* Ukuran font */
+    border: none; /* Tidak ada garis tepi */
+    border-radius: 5px; /* Sudut lengkung pada sudut tombol */
+    cursor: pointer; /* Kursor pointer saat digunakan */
+    background-color: #f0f0f0;  /* Warna latar tombol */
+}
+
+button:hover {
+    background-color: #ccc; /* Warna latar belakang saat tombol dihover */
+}

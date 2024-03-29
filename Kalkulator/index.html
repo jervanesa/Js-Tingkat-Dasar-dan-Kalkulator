@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen dan versi HTML -->
+<html lang="en"> <!-- Tag pembuka elemen HTML dengan atribut bahasa English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Pengaturan karakter set ke UTF-8 untuk mendukung karakter khusus -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan tampilan responsif -->
+    <title>Kalkulator</title> <!-- Judul halaman web -->
+    <link rel="stylesheet" href="./aseets/style.css"> <!-- Menghubungkan file stylesheet -->
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Kalkulator</h2> <!-- Judul kalkulator -->
+        <input type="text" id="display" disabled> <!-- Input teks yang tidak dapat diubah (disabled) -->
+        <div class="buttons"> <!-- Elemen untuk menempatkan tombol-tombol kalkulator -->
+            <button onclick="clearEntry()">CE</button> <!-- Tombol untuk menghapus satu digit -->
+            <button onclick="clearDisplay()">C</button> <!-- Tombol untuk menghapus seluruh layar kalkulator -->
+            <button onclick="appendToDisplay('%')">%</button> <!-- Tombol untuk menambahkan tanda persen -->
+            <button onclick="toggleSign()">+/-</button> <!-- Tombol untuk mengubah tanda bilangan -->
+            <button onclick="appendToDisplay('7')">7</button> <!-- Tombol angka 7 -->
+            <button onclick="appendToDisplay('8')">8</button> <!-- Tombol angka 8 -->
+            <button onclick="appendToDisplay('9')">9</button> <!-- Tombol angka 9 -->
+            <button onclick="appendToDisplay('+')">+</button> <!-- Tombol untuk operator penjumlahan -->
+            <button onclick="appendToDisplay('4')">4</button> <!-- Tombol angka 4 -->
+            <button onclick="appendToDisplay('5')">5</button> <!-- Tombol angka 5 -->
+            <button onclick="appendToDisplay('6')">6</button> <!-- Tombol angka 6 -->
+            <button onclick="appendToDisplay('-')">-</button> <!-- Tombol untuk operator pengurangan -->
+            <button onclick="appendToDisplay('1')">1</button> <!-- Tombol angka 1 -->
+            <button onclick="appendToDisplay('2')">2</button> <!-- Tombol angka 2 -->
+            <button onclick="appendToDisplay('3')">3</button> <!-- Tombol angka 3 -->
+            <button onclick="appendToDisplay('*')">*</button> <!-- Tombol untuk operator perkalian -->
+            <button onclick="appendToDisplay('0')">0</button> <!-- Tombol angka 0 -->
+            <button onclick="appendToDisplay('.')">.</button> <!-- Tombol untuk tanda desimal -->
+            <button onclick="calculate()">=</button> <!-- Tombol untuk menghitung hasil -->
+            <button onclick="appendToDisplay('/')">/</button> <!-- Tombol untuk operator pembagian -->
+        </div>        
+    </div>
+    <script src="./aseets/script.js"></script> <!-- Menghubungkan file JavaScript -->
+</body>
+</html>

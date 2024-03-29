@@ -1,0 +1,20 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id"> <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+
+  <head>
+    <meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+    <!--sebagai judul utama halaman web-->
+    <title>Belajar JavaScript: External Defer</title>
+
+    <!-- Menyematkan skrip JavaScript eksternal dari file "script_with_defer.js" dengan atribut "defer" -->
+    <script src="./assets/kodesatu.js" defer></script> <!---Skrip ini akan dieksekusi setelah konten HTML selesai dimuat dengan defer-->
+  </head>
+
+  <body>
+    <!-- Elemen h1 yang akan diubah isinya -->
+    <h1 id="myH1"></h1>
+
+    <!-- Menyematkan skrip JavaScript eksternal dari file "script_without_defer.js" dengan atribut "defer" -->
+    <script src="./assets/kodedua.js" defer></script> <!---Skrip ini akan dieksekusi setelah konten HTML selesai dimuat dengan defer-->
+  </body>
+</html>

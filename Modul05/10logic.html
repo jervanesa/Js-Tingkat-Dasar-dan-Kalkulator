@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id"> <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+  <head>
+    <meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+    <!-- Sebagai judul utama halaman web -->
+    <title>Belajar JavaScript: Logic</title>
+  </head>
+  <body>
+    <!-- Sebagai judul dengan menggunakan h1 -->
+    <h1>Belajar JavaScript: Logic</h1>
+    <script>
+      // IF
+      let user = "admin"; // Mendefinisikan variabel user dengan nilai "admin"
+      if (user === "admin") { // Jika user adalah admin
+        console.log("Selamat datang admin..."); // Cetak pesan "Selamat datang admin..."
+      }
+
+      // IF ELSE
+      let hari = "selasa"; // Mendefinisikan variabel hari dengan nilai "selasa"
+      if (hari === "senin") { // Jika hari adalah "senin"
+        console.log("Saatnya kerja..."); // Cetak pesan "Saatnya kerja..." ke konsol
+      } else {
+        console.log("Bukan hari senin..."); // Jika bukan hari "senin", cetak pesan "Bukan hari senin..." ke konsol
+      }
+
+      // SWITCH
+      let nilai = 6; // Mendefinisikan variabel nilai dengan nilai 6
+      switch (nilai) { // Memulai percabangan berdasarkan nilai variabel nilai
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+          console.log("Selama ini ngapain aja bro?"); // Jika nilai adalah 1, 2, 3, 4, atau 5, cetak pesan "Selama ini ngapain aja bro?" ke konsol
+          break;
+          break;
+        case 6:
+        case 7:
+        case 8:
+          console.log("Belajar lebih giat lagi!"); // Jika nilai adalah 6, 7, atau 8, cetak pesan "Belajar lebih giat lagi!" ke konsol
+          break;
+        case 9:
+        case 10:
+          console.log("Pertahankan!"); // Jika nilai adalah 9 atau 10, cetak pesan "Pertahankan!" ke konsol
+          break;
+        default:
+          console.log("Masukkan angka 1 - 10"); // Jika nilai tidak termasuk dalam case-case di atas, cetak pesan "Masukkan angka 1 - 10" ke konsol
+      }
+
+      // FOR
+      for (let i = 100; i >= 0; i = i - 5) { // Perulangan dari 100 sampai dengan 0 dengan langkah pengurangan 5
+        console.log(i + " * 5 = " + i * 5); // Cetak hasil perkalian i dengan 5 ke konsol
+      }
+
+      // Menampilkan Array
+      let siswa = ["Andri", "Joko", "Sukma", "Rina", "Sari"];  // Mendefinisikan array siswa
+      for (let i = 0; i < 5; i++) { // Perulangan untuk mengakses setiap elemen array siswa
+        console.log(siswa[i]); // Cetak setiap elemen array siswa ke konsol
+      }
+
+      // Array Length 
+      let murid = ["Andri", "Joko", "Sukma", "Rina", "Sari"];  // Mendefinisikan array murid
+      let jumlah_murid = murid.length; // Mendapatkan panjang (jumlah elemen) array murid
+      console.log("Jumlah murid = " + jumlah_murid); // Cetak jumlah murid ke konsol
+      for (let i = 0; i < jumlah_murid; i++) {  // Perulangan untuk mengakses setiap elemen array murid
+        console.log(murid[i]); // Cetak setiap elemen array murid ke konsol
+      }
+
+      // FOR OF ARRAY
+      let siswas = ["Andri", "Joko", "Sukma", "Rina", "Sari"]; // Mendefinisikan array siswas
+      for (let i of siswas) { // Perulangan for-of untuk mengakses setiap elemen array siswas
+        console.log(i); // Cetak setiap elemen array siswas ke konsol
+      }
+
+    </script>
+  </body>
+</html>

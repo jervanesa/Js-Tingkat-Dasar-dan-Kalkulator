@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- Deklarasi tipe dokumen HTML. -->
+<html lang="id"> <!-- Mulai tag elemen HTML dengan atribut bahasa "id" sebagai identifikasi bahasa halaman. -->
+  <head>
+    <meta charset="utf-8" /> <!-- Mendefinisikan set karakter yang digunakan dalam dokumen, dalam hal ini UTF-8. -->
+    <!--sebagai judul utama halaman web-->
+    <title>Belajar JavaScript: Internal JS</title>
+  </head>
+  <body>
+    <!-- Tombol yang akan mengubah isi dari elemen h1 ketika diklik -->
+    <button id="myButton">Click me!</button>
+
+    <!-- Elemen h1 yang akan diubah isinya -->
+    <h1 id="myH1"></h1>
+
+    <!-- Skrip JavaScript internal yang menambahkan event listener ke tombol -->
+    <script>
+      document
+        .getElementById("myButton") // Mendapatkan elemen tombol dengan id "myButton"
+        .addEventListener("click",() => (document.getElementById("myH1").innerHTML = "Hello World")); // Menambahkan event listener untuk mengubah isi elemen h1 menjadi "Hello World" ketika tombol diklik
+    </script>
+  </body>
+</html>
